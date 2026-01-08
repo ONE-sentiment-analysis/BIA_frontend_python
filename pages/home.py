@@ -20,7 +20,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-#Caso o usuário tente entrar sem login ou passou um bom tempo de ocidade 
+#Caso o usuário tente entrar sem login 
 if "logado" not in st.session_state or not st.session_state.logado:
     st.info("Por favor, faça login primeiro.")
     st.switch_page("index.py") #página de login
