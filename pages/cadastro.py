@@ -52,27 +52,27 @@ def aplicar_estilo():
 
     /* BOTÃO 1 — CADASTRAR */
     div[data-testid="stFormSubmitButton"] button:nth-of-type(1) {
-        background-color: #335E91 !important;
+        background-color: #590F7F !important;
         color: white !important;
         border: none !important;
-        box-shadow: 0 4px 10px rgba(51,94,145,0.35);
+        box-shadow: 0 4px 10px rgba(65, 11, 93, 1.0);
     }
 
     div[data-testid="stFormSubmitButton"] button:nth-of-type(1):hover {
-        background-color: #4A8BD4 !important;
+        background-color: #410B5D !important;
         transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(74,139,212,0.45);
+        box-shadow: 0 6px 16px rgba(65, 11, 93, 1.0);
     }
 
     /* BOTÃO 2 — VOLTAR */
     div[data-testid="stFormSubmitButton"] button:nth-of-type(2) {
         background-color: transparent !important;
-        color: #4A8BD4 !important;
+        color: #590F7F !important;
         border: 1px solid #30363d !important;
     }
 
     div[data-testid="stFormSubmitButton"] button:nth-of-type(2):hover {
-        border-color: #8b949e !important;
+        border-color: #410B5D !important;
         background-color: #21262d !important;
         color: white !important;
         transform: translateY(-2px);

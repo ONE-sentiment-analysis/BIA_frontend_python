@@ -2,7 +2,7 @@
 
 import streamlit as st
 
-#Título da página (visível na aba)
+# ---------- CONFIGURAÇÃO ----------
 st.set_page_config(page_title="Login", layout="centered")
 
 
@@ -49,7 +49,7 @@ def aplicar_estilo():
 
         /* Estiliza o botão de LOGIN  */
         div[data-testid="stFormSubmitButton"] > button:first-child {
-            background-color: #335E91!important;
+            background-color: #590F7F!important;
             color: white !important;
             border-radius: 8px;
             border: none;
@@ -59,7 +59,7 @@ def aplicar_estilo():
         }
         
         div[data-testid="stFormSubmitButton"] > button:first-child:hover {
-            background-color: #578DE5 !important;
+            background-color: #410B5D !important;
             transform: scale(1.02);
         }
 
@@ -67,7 +67,7 @@ def aplicar_estilo():
         
         div.stColumn:nth-of-type(3) button {
             background-color: transparent !important;
-            color: #4A8BD4 !important;
+            color:#6F139C !important;
             border: 1px solid #30363d !important;
             border-radius: 8px;
             height: 3em;
