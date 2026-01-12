@@ -45,8 +45,10 @@ def aplicar_estilo():
         
         /* Centraliza o título */
         h2 {
-            color: #335E91;
-            padding-bottom: 10px;
+           color: #335E91; 
+           padding-bottom: 0px; 
+           margin-bottom: 0rem; 
+           margin-top: -80px !important;
         }
 
         /* Estiliza o botão de LOGIN  */
@@ -89,15 +91,15 @@ def tela_login():
     aplicar_estilo()
 
     with st.form("login_form"):
-        st.markdown("<h2 style='text-align:center;'>Login</h2>", unsafe_allow_html=True)
-        st.markdown("<p style='text-align:center; color:gray;'>Entre com suas credenciais</p>", unsafe_allow_html=True)
+        scol1, col2, col3 = st.columns([1, 2.5, 1.5]) 
+        with col2: 
+            st.image("img\SentimentAPI-removebg-preview.png", width=340) 
+        st.markdown("<h2 style='text-align:center;'>Login</h2>", unsafe_allow_html=True) 
+        st.markdown("<p style='text-align:center; color:gray;'>Entre com suas credenciais</p>", unsafe_allow_html=True) 
         st.divider()
-        email = st.text_input("Email",
-                              icon=':material/mail:')
-        password = st.text_input("Senha", type="password",
-                                 icon=':material/lock:')
-
-        st.write("") 
+        email = st.text_input("Email", icon=':material/mail:')
+        password = st.text_input("Senha", type="password", icon=':material/lock:') 
+        st.write("")
 
         col_espaco1, col_login, col_cad, col_espaco2 = st.columns([0.8, 1, 1, 0.8]) #Colunas para ajeitar os botões na tela 
         with col_login:

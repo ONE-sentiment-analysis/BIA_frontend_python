@@ -51,14 +51,14 @@ selected = option_menu(
     styles={
         "container": {
             "padding": "0px!important", 
-            "background-color": "#590F7F",
+            "background-color": "#6A1BB2",
             "border-radius": "10px",
             "display": "flex",
             "justify-content": "center",
             "overflow": "hidden"
         },
         "icon": {
-            "color": "white", 
+            "color": "#C86BEB", 
             "font-size": "16px"
         }, 
         "nav-link": {
@@ -75,11 +75,11 @@ selected = option_menu(
             "font-weight": "500",
             "border-right": "1px solid rgba(255, 255, 255, 0.15)",
             "border-radius": "0px",
-            "--hover-color": "#410B5D",
+            "--hover-color": "#581599",
             "white-space": "nowrap"
         },
         "nav-link-selected": {
-            "background-color": "#3C0A55", 
+            "background-color": "#581599", 
             "font-weight": "bold",
         },
     }
@@ -105,7 +105,16 @@ st.divider()
 
 # ---------------- ABA SOBRE ----------------
 if active == "sobre":
-    st.markdown("## 🤖 B.I.A — Assistente de Análise de Sentimentos")
+    col_img, col_titulo = st.columns([0.06, 0.94], gap="small")
+
+    with col_img:
+        st.image("img/inverse-removebg-preview.png", width=95)
+
+    with col_titulo:
+        st.markdown("## B.I.A — Assistente de Análise de Sentimentos")
+    
+    st.write("")
+
     texto = (
         "Projeto desenvolvido como estrutura base para o Hackaton da ORACLE."
         " Esta aplicação, construída com Spring Boot, tem como objetivo integrar-se a um modelo de classificação de sentimentos fornecido por uma API externa desenvolvida em Python."
